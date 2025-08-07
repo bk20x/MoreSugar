@@ -25,6 +25,7 @@ proc add(a, b : int): --> int = a + b
 #Function chaining macro
 
 echo (25.7 + 25.5) -> toInt
+
 let name = " Boben " -> strip
 assert name == "Boben"
 ```
