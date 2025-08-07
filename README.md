@@ -6,6 +6,7 @@ import more_sugar, json
 
 
 #basic iterator macros
+
 nums <- @[2,4,6,8]
 nums.each num: num -> echo
 
@@ -17,9 +18,13 @@ data.elems.each elem:
 
 
 #Sugar for return types
+
 proc add(a, b : int): --> int = a + b
 
 
 #Function chaining macro
+
 echo (25.7 + 25.5) -> toInt
+let name = " Boben " -> strip
+assert name == "Boben"
 ```
