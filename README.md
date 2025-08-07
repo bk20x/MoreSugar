@@ -2,7 +2,7 @@
 ## Syntactic sugar for nim based off of it's macro system.
 
 ```
-import more_sugar, json
+import more_sugar, json, strutils
 
 
 #basic iterator macros
