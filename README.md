@@ -22,7 +22,7 @@ data.elems.each elem:
 proc add(a, b : int): --> int = a + b
 
 
-#Function chaining macro
+#Function / expression chaining macro
 
 echo (25.7 + 25.5) -> toInt
 
