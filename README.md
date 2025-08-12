@@ -1,5 +1,5 @@
 # MoreSugar
-## Syntactic sugar for nim based off of it's macro system.
+## More syntax sugar for nim based off of it's macro system.
 
 ```
 import more_sugar, json, strutils
