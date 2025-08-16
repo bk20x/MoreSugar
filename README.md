@@ -7,8 +7,9 @@ import more_sugar, json, strutils
 
 #basic iterator macros
 
-#the same as let nums = @[2,4,6,8]
-nums <- @[2,4,6,8]
+
+nums <- @[2,4,6,8]  #the same as let nums = @[2,4,6,8]
+
 nums.each num: num -> echo
 
 
