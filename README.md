@@ -19,7 +19,7 @@ data.elems.each elem:
 
 #Sugar for return types
 
-proc add(a, b : int): --> int = a + b
+proc add(a, b : int): -> int = a + b
 
 
 #Function / expression chaining macro
