@@ -3,7 +3,7 @@ import macros
 
 
 
-macro `-->`*(t: typedesc): typedesc =
+macro `->`*(t: typedesc): typedesc =
    #Sugar for return type
    t.getType() 
 
