@@ -18,6 +18,11 @@ data.elems.each elem:
   elem.pairs k,v:
     echo k, v
 
+#This works too
+
+each data.elems, elem:
+  pairs elem, k,v:
+    echo k, v
 
 #Sugar for return types
 
