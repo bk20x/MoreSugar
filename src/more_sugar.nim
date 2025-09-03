@@ -3,9 +3,6 @@ import macros
 
 
 
-macro `->`*(t: typedesc): typedesc =
-   #Sugar for return type
-   t.getType() 
 
 
 
@@ -21,9 +18,12 @@ macro pairs*(collection: untyped,kname,vname: untyped, code: varargs[untyped]) =
     for `kname`, `vname` in `collection`:
       `code`
 
+macro `->`*(t: typedesc): typedesc =
+   #Sugar for return type
+   t.getType() 
 
 macro `<-`*(ident, value : untyped) =
-  ## Sugar for `let`
+  ## Sugar for `let` being the form `let ,ident = ,value`
   result = newStmtList()
   result.add quote do:
     let `ident` = `value`
