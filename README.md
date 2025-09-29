@@ -32,8 +32,7 @@ proc add(a, b : int): -> int = a + b
 nums.each num:
   num -> echo #`->` in this context passes lhs as the first argument to rhs
 
+
 echo (25.7 + 25.5) -> toInt #Compiles to: `echo toInt (25.7 + 25.5)`
 
-let name = " Boben " -> strip
-assert name == "Boben"
 ```
