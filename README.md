@@ -10,7 +10,8 @@ import more_sugar, json, strutils
 
 nums <- @[2,4,6,8]  #the same as let nums = @[2,4,6,8]
 
-nums.each num: num -> echo
+nums.each num:
+  num -> echo # `->` in this context passes lhs as the first argument to rhs
 
 
 data <- parseFile "dummy.json"
