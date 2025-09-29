@@ -10,8 +10,6 @@ import more_sugar, json, strutils
 
 nums <- @[2,4,6,8]  #the same as let nums = @[2,4,6,8]
 
-nums.each num:
-  num -> echo # `->` in this context passes lhs as the first argument to rhs
 
 
 data <- parseFile "dummy.json"
@@ -31,7 +29,10 @@ proc add(a, b : int): -> int = a + b
 
 #Function / expr chaining macro
 
-echo (25.7 + 25.5) -> toInt
+nums.each num:
+  num -> echo #`->` in this context passes lhs as the first argument to rhs
+
+echo (25.7 + 25.5) -> toInt #Compiles to: `echo toInt (25.7 + 25.5)`
 
 let name = " Boben " -> strip
 assert name == "Boben"
